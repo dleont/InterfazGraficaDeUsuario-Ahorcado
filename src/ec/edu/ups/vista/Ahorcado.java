@@ -493,7 +493,9 @@ public class Ahorcado extends javax.swing.JFrame {
     }//GEN-LAST:event_btnTActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       
+        //el valor de vidas siempre sera 5 (maximo) al reiniciar un nuevo juego
+        vida=5;
+        iniciar();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
