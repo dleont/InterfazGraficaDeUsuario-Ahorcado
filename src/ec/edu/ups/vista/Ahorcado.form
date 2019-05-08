@@ -64,11 +64,11 @@
                           <Component id="jLabel1" min="-2" pref="142" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="txtVidas" min="-2" pref="65" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                           <Component id="lblPista" min="-2" pref="80" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtPista" min="-2" pref="181" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="txtPista" max="32767" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
@@ -94,8 +94,8 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="txtPista" alignment="3" pref="52" max="32767" attributes="0"/>
                           <Component id="jButton2" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
+                          <Component id="lblPista" alignment="3" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="lblPista" max="32767" attributes="0"/>
                       <Component id="jLabel1" max="32767" attributes="0"/>
                       <Component id="txtVidas" max="32767" attributes="0"/>
                   </Group>

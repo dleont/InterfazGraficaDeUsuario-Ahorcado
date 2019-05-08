@@ -90,17 +90,17 @@ public class Ahorcado extends javax.swing.JFrame {
         msgs[8] = "Alemania".toUpperCase();
         msgs[9] = "Grecia".toUpperCase();
         //utencilio de cocina
-        msgs[10] = "tostadora".toUpperCase();
-        msgs[11] = "sarten".toUpperCase();
-        msgs[12] = "cafetera".toUpperCase();
-        msgs[13] = "cucharon".toUpperCase();
-        msgs[14] = "cuchara".toUpperCase();
+        msgs[10] = "Tostadora".toUpperCase();
+        msgs[11] = "Sarten".toUpperCase();
+        msgs[12] = "Cafetera".toUpperCase();
+        msgs[13] = "Cucharon".toUpperCase();
+        msgs[14] = "Cuchara".toUpperCase();
         //prenda de vestir
         msgs[15] = "Calsetines".toUpperCase();
         msgs[16] = "Pantaloneta".toUpperCase();
         msgs[17] = "Gorra".toUpperCase();
-        msgs[18] = "corbata".toUpperCase();
-        msgs[19] = "blusa".toUpperCase();
+        msgs[18] = "Corbata".toUpperCase();
+        msgs[19] = "Blusa".toUpperCase();
         //provincias del Ecuador
         msgs[20] = "Guayas".toUpperCase();
         msgs[21] = "Tungurahua".toUpperCase();
@@ -142,6 +142,12 @@ public class Ahorcado extends javax.swing.JFrame {
             txtPista.setText("Animal Domestico"); //pista
         }else if(ran<=9){
             txtPista.setText("Pais Europeo"); //pista
+        }else if(ran<=14){
+            txtPista.setText("Utencilio de Cocina ");
+        }else if(ran<=19){
+            txtPista.setText("Prenda de Vestir ");
+        }else{
+            txtPista.setText("Provincia del Ecuador");
         }
         
         //SEPARA EL MENSAJE POR PALABRAS
@@ -444,11 +450,11 @@ public class Ahorcado extends javax.swing.JFrame {
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtVidas, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(55, 55, 55)
+                        .addGap(31, 31, 31)
                         .addComponent(lblPista, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtPista, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtPista)
+                        .addGap(18, 18, 18)
                         .addComponent(jButton2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(lblAhorcado, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -467,8 +473,8 @@ public class Ahorcado extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtPista, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(lblPista, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblPista, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(txtVidas))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
