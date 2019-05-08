@@ -89,7 +89,25 @@ public class Ahorcado extends javax.swing.JFrame {
         msgs[7] = "Francia".toUpperCase();
         msgs[8] = "Alemania".toUpperCase();
         msgs[9] = "Grecia".toUpperCase();
-        
+        //utencilio de cocina
+        msgs[10] = "tostadora".toUpperCase();
+        msgs[11] = "sarten".toUpperCase();
+        msgs[12] = "cafetera".toUpperCase();
+        msgs[13] = "cucharon".toUpperCase();
+        msgs[14] = "cuchara".toUpperCase();
+        //prenda de vestir
+        msgs[15] = "Calsetines".toUpperCase();
+        msgs[16] = "Pantaloneta".toUpperCase();
+        msgs[17] = "Gorra".toUpperCase();
+        msgs[18] = "corbata".toUpperCase();
+        msgs[19] = "blusa".toUpperCase();
+        //provincias del Ecuador
+        msgs[20] = "Guayas".toUpperCase();
+        msgs[21] = "Tungurahua".toUpperCase();
+        msgs[6] = "Esmeralda".toUpperCase();
+        msgs[7] = "Loja".toUpperCase();
+        msgs[8] = "Imbabura".toUpperCase();
+        msgs[9] = "Santa Elena".toUpperCase();
         
         //se asigna un evento a cada letra para comprobar que exista en la palabra a adivinar
         for (int i = 1; i < 27; i++) {
@@ -105,12 +123,13 @@ public class Ahorcado extends javax.swing.JFrame {
     //funcion para comenzar los parametros del juego o iniciar una nueva partida
     public void iniciar() {
         //muestra oportunidades que tiene para descrubrir la palabra
+        vida=5;
         txtVidas.setText(String.valueOf(vida));
         //ERRORES EN 0
         err = 0;
         lblAhorcado.setIcon(imgs[0]);
         jTextPane1.setText("");
-        //para activar las letras del tablero
+        //para activar los botones de las letras del tablero
         for (int i = 1; i < 27; i++) {
             btns[i].setEnabled(true);
         }
@@ -122,7 +141,7 @@ public class Ahorcado extends javax.swing.JFrame {
             txtPista.setText("Animal Salvaje"); //pista
         }else if(ran<=5){
             txtPista.setText("Animal Domestico"); //pista
-        }else{
+        }else if(ran<=9){
             txtPista.setText("Pais Europeo"); //pista
         }
         
