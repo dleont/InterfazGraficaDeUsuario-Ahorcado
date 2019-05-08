@@ -34,7 +34,7 @@ public class Ahorcado extends javax.swing.JFrame {
         initComponents();
         imgs = new ImageIcon[6];
         btns = new JButton[27];
-        msgs = new String[10];
+        msgs = new String[25];
         vida=5;
         
        
@@ -104,10 +104,9 @@ public class Ahorcado extends javax.swing.JFrame {
         //provincias del Ecuador
         msgs[20] = "Guayas".toUpperCase();
         msgs[21] = "Tungurahua".toUpperCase();
-        msgs[6] = "Esmeralda".toUpperCase();
-        msgs[7] = "Loja".toUpperCase();
-        msgs[8] = "Imbabura".toUpperCase();
-        msgs[9] = "Santa Elena".toUpperCase();
+        msgs[22] = "Esmeralda".toUpperCase();
+        msgs[23] = "Loja".toUpperCase();
+        msgs[24] = "Imbabura".toUpperCase();
         
         //se asigna un evento a cada letra para comprobar que exista en la palabra a adivinar
         for (int i = 1; i < 27; i++) {
